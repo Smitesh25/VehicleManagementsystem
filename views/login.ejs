@@ -1,0 +1,47 @@
+<h1>Login</h1>
+<form action="/login" method="POST" class="validated-form" novalidate>
+  <div class="mb-3" id="rbuttons">
+
+    <input id="rb1" name="grp1" type="radio" value="admin">Admin</input><br>
+    <input id="rb2" name="grp1" type="radio" value="passenger">Passenger</input><br>
+    <input id="rb3" name="grp1" type="radio" value="driver">Driver</input><br>
+    </div>
+    <button onclick="func()"></button>
+    <div class="mb-3">
+    <label class="form-label" for="username">Username</label>
+    <input class="form-control" type="text" id="username" name="username" required>
+    <!-- <div class="valid-feedback">
+      looks good
+    </div> -->
+</div>
+
+<div class="mb-3">
+  <label class="form-label" for="password">Password</label>
+  <input class="form-control" type="password" id="password" name="password" required>
+  <!-- <div class="valid-feedback">
+    looks good
+  </div> -->
+</div>
+
+<button class="btn btn-success">Login</button>
+</form>
+
+<script>
+  var selected="lol";
+  if(document.getElementById('rb1').checked) {
+    selected=document.getElementById('rb1').value;
+    console.log("in admin");
+  }
+  else if(document.getElementById('rb2').checked) {
+    selected=document.getElementById('rb2').value;
+    
+    console.log("in passenger");
+}
+  else if(document.getElementById('rb3').checked) {
+    selected=document.getElementById('rb3').value;
+    
+    console.log("in driver");
+  }
+  console.log(selected);
+
+</script>
