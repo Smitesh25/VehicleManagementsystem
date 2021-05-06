@@ -1,0 +1,11 @@
+.index{
+    height: 100vh;
+}
+.index-buttons button{
+    min-width: 10%;
+}
+.forms{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
