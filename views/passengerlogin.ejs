@@ -1,8 +1,8 @@
 <div class="passengerlogin forms">
     <form action="/logincheckpassenger" method="POST">
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Username</label>
+            <input type="number" class="form-control" id="floatingInput" placeholder="123456789012" min="111111111111" max="999999999999">
+            <label for="floatingInput">Aadhar Number</label>
           </div>
           <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
@@ -13,7 +13,7 @@
 
           <div class="d-grid gap-2">
             <button class="btn btn-primary" type="submit">Login</button>
-            <br><p style="text-align: center;">or</p>
+            <br>
             <button class="btn btn-secondary" type="button"><a href="/passengerregister" style="text-decoration: none; color: white;">Register</a></button>
           </div>
     </form>
